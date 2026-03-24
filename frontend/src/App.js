@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = "http://localhost:5000";
+const API = "https://playlist-mirror-backend.onrender.com";
 
 function SongSearch() {
   const [song, setSong] = useState("");
