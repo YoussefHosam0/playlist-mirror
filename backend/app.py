@@ -11,7 +11,8 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
-CORS(app, origins=["http://localhost:3000"], supports_credentials=True)
+CORS(app, origins=["http://localhost:3000", "https://playlist-mirror-frontend.onrender.com"], supports_credentials=True)
+
 
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
